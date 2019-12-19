@@ -7,3 +7,41 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 }
+
+		.bg-black{
+			background-color: black;
+		}
+		.text-black{
+			color:black;
+		}
+		.mt-4-5{
+			margin-top: 2rem!important;
+		}
+
+		.h4{
+			font-size: 1.7rem!important;
+		}
+
+		.py-09{
+			padding-top: 0.9rem!important;
+			padding-bottom: 0.9rem!important;
+		}
+
+		svg{
+			overflow: visible;
+		}
+		.no-padding-x{
+			padding-left: 0!important;
+			padding-right: 0!important;
+		}
+		#test{
+			border:5px solid blue;
+		}
+
+		nav a:hover{
+			text-decoration: none;
+		}
+
+		.color-purple{
+			color: #734985;
+		}

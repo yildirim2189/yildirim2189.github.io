@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="col-7 mx-auto bg-white mt-lg-1 mb-lg-4 no-padding-x pb-5" >
+
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+      <!-- First paragraph of content by default -->
+    </li>
+  {% endfor %}
+</ul>
+</div>
