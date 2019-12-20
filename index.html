@@ -2,29 +2,37 @@
 layout: default
 title: "Home"
 ---	
-	<div class="col-7 mx-auto bg-white mt-lg-1 mb-lg-4 no-padding-x pb-5" >
-		{% include logo.html %}
-		<div class="mt-4-5">
-			<nav >
-				<div class=" bg-white text-center py-3" style="margin-bottom: 0.4rem!important">
-					<a href="#" class="nav-item h4 text-black">ABOUT ME</a>
-				</div>
-				<div class="bg-black text-center py-09">
-					<a href="#" class="nav-item h4 text-white" style="font-weight: 400; font-size: 1.6rem!important">PROJECTS OF ONE</a>
-				</div>
-				<div class="bg-white text-center py-3" style="margin-bottom: 0.4rem!important; margin-top: 0.4rem!important">
-					<a href="#" class="nav-item h4 text-black" >NOTES OF ONE PROGRAMMER</a>
-				</div>
-				<div class="bg-black text-center py-09" style="">
-					<a href="#" class="nav-item h4 text-white" style="font-weight: 400; font-size: 1.6rem!important">OTHER</a>
-				</div>
-				<svg class="w-100" height="130px" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1"> 
- 				 	<path  d="M 0,10 q50,100 100,0"  fill="transparent"  />
-					<path  id="test" d="M 0,0 q50,110 100,0"  fill="black" />
- 				  	<path  d="M -10,-5 Q50,150 110,-5" fill="transparent" stroke="BLACK" stroke-width=20 vector-effect="non-scaling-stroke">
+<div class="col-7 mx-auto bg-white mt-lg-1 mb-lg-4 no-padding-x pb-5" >
+
+	<div class="col-lg-5 mx-auto">
+		<div>
+			<a  id="logo" style="cursor: pointer;">
+				<img class="w-100" style="margin-top: 4.5rem!important" src="assets/images/logo.png" alt="logo">
+			</a>
+		</div>
+
+	</div>
+	<div class="mt-4-5" id="lines">
+		<nav >
+			<div class=" bg-white text-center py-3" style="margin-bottom: 0.4rem!important">
+				<a href="#" class="nav-item h4 text-black">ABOUT ME</a>
+			</div>
+			<div class="bg-black text-center py-09">
+				<a href="#" class="nav-item h4 text-white" style="font-weight: 400; font-size: 1.6rem!important">PROJECTS OF ONE</a>
+			</div>
+			<div class="bg-white text-center py-3" style="margin-bottom: 0.4rem!important; margin-top: 0.4rem!important">
+				<a href="#" class="nav-item h4 text-black" >NOTES OF ONE PROGRAMMER</a>
+			</div>
+			<div class="bg-black text-center py-09" style="">
+				<a href="#" class="nav-item h4 text-white" style="font-weight: 400; font-size: 1.6rem!important">OTHER</a>
+			</div>
+			<svg class="w-100" height="130px" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1"> 
+				<path  d="M 0,10 q50,100 100,0"  fill="transparent"  />
+				<path  d="M 0,0 q50,110 100,0"  fill="black" />
+				<path  d="M -10,-5 Q50,150 110,-5" fill="transparent" stroke="black" stroke-width=20 vector-effect="non-scaling-stroke">
 				</svg>
 				<div class="text-center h4 ">
-					<a class="text-purple" href="/contact">CONTACTS</a>
+					<span id="contact-text"  class="text-purple" style="cursor: pointer;">CONTACTS</span>
 				</div>
 
 				<div class="text-center font-weight-bold mt-4">
@@ -35,4 +43,107 @@ title: "Home"
 				</div>
 			</nav>
 		</div>
+
+		<div class="col-5 mx-auto no-padding-x" style="display: none" id="con">
+
+
+			<div class="position-relative w-100" style="padding-top: 190%">
+				<a id="swoosh" class="swoosh" href="/test" class="d-block" style="border-radius: 50%">
+					<div class="circle-out ">
+						<div class="circle-in">
+							<div class="circle-text text-white">CONTACTS</div>
+						</div>
+					</div>
+				</a>
+				<img class="arrows" src="assets/images/arrows.png" alt="arrows">
+				<!-- Arrow top sliding -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; bottom: 100%; z-index: 2; left: 50%; transform: translateX(-50%);" id="arrow-top-sliding" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:black" />
+				</svg>
+				<!-- Arrow top right -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(0%,-73%) rotate(-135deg);" id="arrow-top-right" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:yellow" />
+				</svg>
+				<!-- Arrow top left -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-100%,-73%) rotate(135deg);" id="arrow-top-left" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:orange" />
+				</svg>
+				<!-- Arrow bottom left -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-100%,-27%) rotate(45deg);" id="arrow-bottom-left" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:tomato" />
+				</svg>
+				<!-- Arrow bottom right -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(0%,-27%) rotate(-45deg);" id="arrow-bottom-right" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:crimson;" />
+				</svg>
+				<!-- Arrow down -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-50%,-4%);" id="arrow-down" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:gray;" />
+				</svg>
+				<!-- Arrow right -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(41%,-50%) rotate(-90deg);" id="arrow-right" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:blue;" />
+				</svg>
+				<!-- Arrow left -->
+				<svg width="39%"  viewBox="0 0 100 200" style="position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-141%,-50%) rotate(90deg);" id="arrow-left" > 
+					<polygon points="30,0 70,0 70,160 100,160 50,200 0,160 30,160"
+					style="fill:brown;" />
+				</svg>
+			</div>	
+		</div>
 	</div>
+
+
+
+
+	<audio id="a-on-click" src="assets/audio/click.mp3" ></audio>
+	<script>
+
+		$(document).ready(function(){
+			
+			$("#contact-text").click(function(){
+				window.scrollTo(0,0);
+				$("#con").fadeIn("slow", animateArrow());
+				document.getElementById("lines").style.display = "none";
+				document.getElementById("logo").style.display = "none";
+			});
+			/*
+			$("#logo").click(function() {
+				document.getElementById("con").style.display = "none";
+				$("#lines").fadeIn("slow");
+			}); */
+		});
+
+
+		function animateArrow(){
+			$("#arrow-top-sliding").animate({
+				bottom: '75%'
+			}, "slow");
+		}
+
+		var links = document.getElementsByClassName('swoosh'),
+		audio = document.getElementById('a-on-click'),
+		clickHandler = function(event) {
+    var href = this.href; // cache href here
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    audio.play();
+
+    audio.addEventListener('ended', function(){
+       window.location = href; // use cached href here
+   })
+};
+
+for (var i in links) {
+	links[i].addEventListener('click', clickHandler);
+}
+</script>
