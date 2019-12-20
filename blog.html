@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Blog
+permalink: /anan/
+render_with_liquid: false
 ---
 
 <div class="col-7 mx-auto bg-white mt-lg-1 mb-lg-4 no-padding-x pb-5" >
@@ -16,4 +18,18 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+
+<div class="container">
+ {% highlight java %}
+ public class Test{
+ System.out.println("Hello World!");
+}
+{% endhighlight %}
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+</div>
 </div>

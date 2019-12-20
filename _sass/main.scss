@@ -8,40 +8,104 @@ body {
   font-family: $bodyFont;
 }
 
-		.bg-black{
-			background-color: black;
-		}
-		.text-black{
-			color:black;
-		}
-		.mt-4-5{
-			margin-top: 2rem!important;
-		}
+/* Custom CSS */
+.text-purple{
+	color: #734985;
+}
+.text-black{
+	color:black;
+}
+.bg-black{
+	background-color: black;
+}
 
-		.h4{
-			font-size: 1.7rem!important;
-		}
 
-		.py-09{
-			padding-top: 0.9rem!important;
-			padding-bottom: 0.9rem!important;
-		}
+.mt-4-5{
+	margin-top: 2rem!important;
+}
 
-		svg{
-			overflow: visible;
-		}
-		.no-padding-x{
-			padding-left: 0!important;
-			padding-right: 0!important;
-		}
-		#test{
-			border:5px solid blue;
-		}
+.h4{
+	font-size: 1.7rem!important;
+}
 
-		nav a:hover{
-			text-decoration: none;
-		}
+.py-09{
+	padding-top: 0.9rem!important;
+	padding-bottom: 0.9rem!important;
+}
 
-		.color-purple{
-			color: #734985;
-		}
+svg{
+	overflow: visible;
+}
+.no-padding-x{
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+
+nav a:hover{
+	text-decoration: none;
+}
+
+
+
+/**************************/
+/* CSS for Contact Circle */
+.circle-out{
+	width: 70%;
+	height: auto;
+	padding-top: 70%;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 0 0 0 0.4vw black;
+	position: absolute;
+	transition-duration: 0.5s;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.circle-in{
+	width: 70%;
+	padding-top: 70%;
+	position: absolute;
+	background-color: black;
+	border-radius: 50%;
+	
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 0 0.4vw #2b2a29;
+	transition-duration: 0.5s;
+}
+.circle-text{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+
+.circle-out:hover > .circle-in{
+	background-color: #61A375;
+	width: 65%;
+	padding-top: 65%;
+	box-shadow: 0 0 0 0.7vw #ffffff;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in;
+}
+.circle-out:hover{
+	background: black;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in;
+}
+
+.arrows{
+	width: 164%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/**************************/

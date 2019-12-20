@@ -3,12 +3,41 @@ layout: default
 title: "Contacts"
 ---	
 <div class="col-7 mx-auto bg-white mt-lg-1 mb-lg-4 no-padding-x pb-5" >
-	<h1 class="text-center">Contacts</h1>
+	{% include logo.html %}
 
+	<div class="col-6 mx-auto no-padding-x">
+		
 
-
-	<div class="col-6 mx-auto">
-		<img class="w-100 mt-5" src="assets/images/contacts.png" alt="contact">
-		<img class="w-100 mt-5" src="assets/images/test.png" alt="contact">
+		<div class="position-relative w-100" style="padding-top: 190%">
+			<a class="swoosh" href="/test" class="d-block" style="border-radius: 50%">
+				<div class="circle-out ">
+					<div class="circle-in">
+						<div class="circle-text text-white">CONTACTS</div>
+					</div>
+				</div>
+			</a>
+			<img class="arrows" src="assets/images/test.png" alt="contact">
+		</div>	
 	</div>
 </div>
+<audio id="a-on-click" src="assets/audio/click.mp3" ></audio>
+<script>
+	var links = document.getElementsByClassName('swoosh'),
+	audio = document.getElementById('a-on-click'),
+	clickHandler = function(event) {
+    var href = this.href; // cache href here
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    audio.play();
+
+    audio.addEventListener('ended', function(){
+       window.location = href; // use cached href here
+   })
+};
+
+for (var i in links) {
+	links[i].addEventListener('click', clickHandler);
+}
+</script>
