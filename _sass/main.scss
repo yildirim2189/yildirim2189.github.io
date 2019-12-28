@@ -99,12 +99,39 @@ nav a:hover{
 }
 
 .arrows{
-	width: 150%;
+	width: 165%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-#swoosh:hover  svg path{
-	fill:black;
+#arrow-left{
+	cursor: pointer;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+}
+#arrow-left:hover{
+	fill:#61A375!important;
+	transition-timing-function: ease-in;
+	transition-duration: 0.5s;
+}
+#arrow-right{
+	cursor: pointer;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+}
+#arrow-right:hover{
+	fill:#61A375!important;
+	transition-timing-function: ease-in;
+	transition-duration: 0.5s;
+}
+#arrow-down{
+	cursor: pointer;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+}
+#arrow-down:hover{
+	fill:#61A375!important;
+	transition-timing-function: ease-in;
+	transition-duration: 0.5s;
 }
